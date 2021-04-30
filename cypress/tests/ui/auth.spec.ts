@@ -16,6 +16,13 @@ describe("User Sign-up and Login", function () {
     cy.visualSnapshot("Redirect to SignIn");
   });
 
+
+  it("another test", function () {
+    cy.visit("/personal");
+    cy.location("pathname").should("equal", "/signin");
+    cy.visualSnapshot("Redirect to SignIn");
+  });
+
   it("should remember a user for 30 days after login", function () {
     cy.database("find", "users").then((user: User) => {
       cy.login(user.username, "s3cret", true);
