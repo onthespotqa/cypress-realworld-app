@@ -1,3 +1,8 @@
 status = [
-  "linux" 
+  "ci/circleci: Setup Linux", 
+  "ci/circleci: API Tests", 
+  "ci/circleci: UI Tests - Chrome", 
+  "ci/circleci: UI Tests - Chrome - Mobile", 
+  "ci/circleci: UI Tests - Firefox", 
+  "ci/circleci: UI Tests - Firefox - Mobile"  
 ]
