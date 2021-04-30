@@ -17,6 +17,11 @@ describe("User Sign-up and Login", function () {
     });
   });
 
+  it("is a test", function() {
+    cy.visit("/personal");
+    cy.location("pathname").should("equal", "/signin");
+  })
+
   it("should redirect unauthenticated user to signin page", function () {
     cy.visit("/personal");
     cy.location("pathname").should("equal", "/signin");
