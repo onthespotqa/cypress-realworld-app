@@ -1,0 +1,5 @@
+status = [
+  "ci/circleci: Setup Linux", 
+  "ci/circleci: API Tests", 
+  "ci/circleci: UI Tests - Chrome"
+]
